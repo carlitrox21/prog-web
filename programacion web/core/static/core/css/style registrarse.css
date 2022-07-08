@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0%;   
+}
+@import url('https://fonts.googleapis.com/css2?family=Anybody&family=Libre+Baskerville&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    height: 80vh;
+    background-image: url(https://treehouse.co/uploads/ogrod-angielski-ogrod-w-stylu-angielskim.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+#login{
+    display: flex;
+    height: 100vh;
+    width: 35%;
+    background-color: rgb(1, 85, 72);
+    padding: 20 30;
+    flex-direction: column;
+    text-align: center;
+    margin-top:0px;
+    box-shadow: 7px 13px 37px black;
+}
+
+#formulario{
+    margin-top: 10%;
+    display: block;
+
+}
+#formulario h3 {
+    color:rgb(182, 220, 180) ;
+}
+.controls{
+    height: 24;
+    width: 100%;
+    border-bottom: 1px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: black;
+    background-color: rgb(182, 220, 180);
+    border: 0;
+    border-bottom: 1px;
+
+
+}
+#login h5{
+
+    color: aliceblue;
+    font-size: 30;
+    font-family: 'Libre Baskerville', serif;
+}
+#login h4 {
+    padding-top: 20;
+    font-size: 20;
+    color: aliceblue;
+    font-family: 'Libre Baskerville', serif;
+}
+.acceder{
+    margin-top: 20;
+    margin-bottom: 10;
+    height: 40;
+    width: 120;
+    cursor: pointer;
+    background-color: rgb(1, 85, 72);
+    border-color: aliceblue;
+    color: aliceblue;
+}
+#recuperacion a{
+    text-decoration:none ;
+    color: aliceblue;
+}
+#logo{
+    padding-top: 20;
+}
+#logo img{
+    width: 150px;
+}
+
+#logo h3 {
+    font-size: 45;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    padding-right: 15;
+}
+@media (max-width:925px) {
+    #login{
+        height: 94vh;
+        width: 35%;
+    }
+    #logo img{
+        width: 150px;
+    }
+    #logo h3{
+        font-size: 35;
+    }
+}
+@media (max-width:600px){
+    #login{
+        height: 94vh;
+        width: 50%;
+    }
+    #login h5{
+        font-size:24 ;
+    }
+}
+.error{
+    border: 2px red solid !important;
+    background-color: #ff7474 !important;
+}
+.ok{
+    border: 2px green solid !important;
+    background-color: #74ffb5 !important;
+}

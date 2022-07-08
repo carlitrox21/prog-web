@@ -1,0 +1,25 @@
+body {
+    background-image: url(https://www.65ymas.com/uploads/s1/51/82/33/caracoles-silvestres-cua-les-pueden-venderse-y-en-que-condiciones-foto-bigstock.jpeg);
+
+}
+
+
+#barra{
+    background-color: rgb(1, 85, 72);
+    height: 15vh;
+}
+
+#crud{
+    margin-top: 10vh;
+    background-color: rgb(240, 248, 255,0.7);
+    border: 2 solid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.table{
+   width: 120vh; 
+   
+}

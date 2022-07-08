@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    
+}
+#formulario{
+    margin-top: 20vh;
+    width: 120vh ;
+}
+#formulario{
+    justify-content: center;
+}

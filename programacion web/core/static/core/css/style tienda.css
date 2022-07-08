@@ -1,0 +1,193 @@
+body{
+    background-image: url(https://www.repsol.com/content/dam/repsol-corporate/es/sostenibilidad/paisaje-montana-sol.jpg);
+    background: linear-gradient( rgba(255, 254, 254, 0.7));
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#barra_superior{
+    width: 100%;
+    display: flex;
+    height: 10vh;
+    background-color: rgb(1, 85, 72);
+}
+
+#titulo{
+    width: 100%;
+    display: flex; 
+    
+}
+#nombre{
+    display: flex;
+    width: 25%;
+    font-size: 34;
+    padding-left: 10;
+    padding-top: 10;
+    align-items: center;
+    padding-bottom: 15;
+}
+#nombre a{
+    color: aliceblue;
+    text-decoration: none;
+}
+#suscribete{
+    margin-right: 5vh;
+    margin-bottom: 1vh;
+    height: 5vh;
+    width: 15vh;
+    color: aliceblue;
+    font-size: 28;
+}
+#usuario {
+    width: 75%;
+    display: flex;
+    justify-content: end;
+    font-size: 24;
+    align-items: center;
+}
+#suscribete button{
+    background-color: rgb(202, 212, 220, 0);
+    border-color: aliceblue;
+}
+#sesion {
+    text-decoration: none;
+    color:azure;
+    margin-right: 30;
+
+}
+
+#carrito a{
+    text-decoration: none;
+    color:azure;
+    margin-right: 30;
+}
+#cuerpo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15vh;
+}
+#seccion{
+    color: black;
+}
+#linea{
+    height: 1px;
+    width: 20vh;
+    background-color: black;
+    margin-bottom: 20vh;
+}
+#botones {
+    margin-top: 20vh;
+    height: 6vh;
+    width: 80%;
+    display: flex;
+    background-color: rgb(0, 0, 0,0.8);
+    justify-content: space-around;
+    color: aliceblue;
+}
+#botones button{
+    background-color: rgba(143, 56, 56, 0);
+    border: 0;
+}
+#botones button:hover{
+    text-decoration: underline;
+    color: rgb(228, 217, 10);
+
+}
+#columna {
+    margin-top: 20vh;
+    display: flex;
+    justify-content: space-around;
+}
+#producto{
+    position: relative;
+    display: inline-block;
+}
+#columna img{
+    width: 20vh;
+    border-radius: 10%;
+}
+
+
+#principal{
+    justify-content: space-around;
+    display: block;
+    height: 250vh;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px -10px  55px ;
+    text-align: center;
+}
+#producto a{
+    display: block;
+}
+#descuento h6{
+    color: gold;
+}
+footer{
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20vh;
+    width: 80%;
+    background-color:rgb(1, 85, 72) ;
+    position: absolute;
+    padding-right: 3vh;
+    color: aliceblue;
+}
+footer h1{
+    font-size: 34;
+    font-family: 'Anybody', cursive;
+}
+#crud button{
+    margin-top: 2vh;
+    margin-left: 15vh;
+    background-color: rgb(255, 255, 255,0);
+    border-color: aliceblue ;
+}
+@media (max-width:925px){
+    #columna img{
+        width: 20vh;
+    }
+    #columna h4{
+        font-size: 16;
+    }
+    footer{
+        height: 25%;
+    }
+}
+@media (max-width:600px){
+    #crud button{
+        font-size: 12;
+        margin-left: 8vh;
+    }
+
+    
+    #nombre a{
+        display: none;
+    }
+    #columna img{
+        width: 15vh;
+    }
+    #botones{
+        margin-top: 0;
+        width: 100%;
+    }
+    #principal{
+        height:200vh;
+        width: 100%;
+    }
+    #columna img{
+        width: 10vh;
+    }
+    footer{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}

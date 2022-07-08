@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>crud?</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="{%static 'core/css/crud.css'%}">
+  <body>
+    
+<div id="barra">
+	<a id="boton" href="{%url 'index'%}"><img src="{%static 'core/images/logo.png'%}" alt="" height="100"></a>
+</div>
+
+<div id="crud">
+	
+	<h5>suscriptores</h5>
+	
+	
+	<table class="table table-hover">
+        <a href="{% url 'crear_promocion'%}"><button type="button" class="btn btn-secondary">crear</button></a>
+    <tr>
+        <th>idpromo</th>
+        <th>nombre</th>
+        <th>descuento</th>
+        <th>producto</th>
+        <th>Editar</th>
+        <th>Eliminar</th>
+    </tr>
+    {% for i in promocion %}
+    <tr>
+        <td>{{i.idpromo}}</td>
+        <td>{{i.nombre}}</td>
+        <td>{{i.descuento}}</td>
+        <td>{{i.idProducto}}</td>
+        <td>
+            <a href="{% url 'modificarSuscriptor' i.idpromo %}">Modificar</a>
+        </td>
+        <td>
+            <a href="{% url 'eliminarPromocion' i.idpromo %}">Eliminar</a>
+        </td>
+    </tr>
+
+    {% endfor %}
+</table>
+
+
+
+
+</div>
+</body>
+</html>

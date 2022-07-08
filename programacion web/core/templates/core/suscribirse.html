@@ -1,0 +1,32 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>suscribirse</title>
+    <link rel="stylesheet" href="{%static 'core/css/suscribirse.css'%}">
+
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{%static 'core/js/suscribirse.js'%}"></script>
+    <div id="login">
+            <h5>suscribete para apoyarnos</h5>
+            <h4>y obtener un jugoso descuento del 5% en varios de nuestros mejores productos</h4>
+
+            <form action="" id="formulario" onsubmit="return validarFormulario()" >
+                <label for="#num1">nombre de cuenta</label>
+                <input class="controls" class = "error" type="text" name="num1" value="" id="num1" >
+                <div id="errorcorreo"> </div>
+                <label for="#num2">contraseña</label>
+            <input class="controls" class="error" type="password" name="num2" value="" id="num2" >
+            <div id="errorpass"></div>
+    
+        <div id="logo">
+            <a href="index.html"><img src="{%static 'core/images/logo.png'%}" width="150"></a>
+            <h3>Isebel </h3>
+        </div>
+        
+</body>
+</html>
